@@ -9,9 +9,11 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="fa/css/all.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
 </head>
 
 <body>
@@ -49,7 +51,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Andreas Hellbach</h1>
-            <h2>Technical Writer</h2>
+            <h2 id="simpleUsage">Technischer Redakteur.</h2>
             <a href="#contact" class="btn-rounded-white">Schreib' mir!</a>
         </div>
         <!-- End #lead-content -->
@@ -88,7 +90,18 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Erfahrungen</h2>
         <div id="experience-timeline">
-            <div data-date="10.2018 – 05.2019">
+            <div data-date="Seit 12.2019" data-icon="ship">
+                <h3>WinGD (Winterthur Gas & Diesel Ltd.)</h3>
+                <h4>🚢 Technical Writer (Specialization 3D Graphics) in Winterthur 🇨🇭</h4>
+                <p>
+                    „Explorative und problemorientierte Untersuchung und Bearbeitung blockierter Informationsflüsse.“ Note: 1,0
+                </p>
+                <p>
+                    Erstellung und technische Implementierung eines Kommunikationskonzepts über E-Mail und Formulare; Optimierung und Erweiterung der Unternehmenswebsite; Spendenakquise; Marketingcontrolling; Informationssicherheit
+                </p>
+            </div>
+            
+            <div data-date="10.2018 – 05.2019" data-icon="microscope">
                 <h3>Frutika S.R.L.</h3>
                 <h4>🌾 Bachelorarbeit in Kressburgo 🇵🇾</h4>
                 <p>
@@ -216,10 +229,8 @@
             <li>PTC Creo</li>
             <li>Python</li>
             <li>JavaScript</li>
-            <li>HTML</li>
+            <li>HTML/CSS</li>
             <li>WordPress</li>
-            <li>JavaScript</li>
-            <li>Python</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -265,6 +276,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/typewriter.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,6 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
-
 (function($) {
 
     // Remove no-js class
@@ -63,7 +62,9 @@
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            var icon = $this.data('icon');
+            console.log(icon)
+            $(this).prepend('<div class="vtimeline-icon"><i class="fas fa-map-marker-alt"></i></div>');
         });
 
         // Add dates to the timeline if exists
